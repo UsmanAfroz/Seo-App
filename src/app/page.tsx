@@ -4,7 +4,7 @@ import Features from "./components/features";
 import AboutSection from "./components/aboutSection"
 import Testimonials from "./components/testimonials";
 import CTA from "./components/cta";
-
+import BrandMentions from "./components/brandMentions";
 
 
 export default function Home() {
@@ -15,6 +15,7 @@ export default function Home() {
       <Features />
       <AboutSection />
       <Testimonials />
+      <BrandMentions />
       <CTA />
       
 

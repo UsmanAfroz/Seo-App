@@ -26,20 +26,26 @@ export default function AboutSection() {
 
           
 
-          <ul className="mt-6 space-y-3">
-            <li className="flex items-start gap-3">
-              <span className="inline-block mt-1 text-blue-600">•</span>
-              <span className="text-gray-700">🚀 Performance-focused — strategies aligned with SaaS growth KPIs.</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="inline-block mt-1 text-blue-600">•</span>
-              <span className="text-gray-700">🔗 SEO-first approach — high-quality, niche-relevant backlinks from trusted sources.</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="inline-block mt-1 text-blue-600">•</span>
-              <span className="text-gray-700">📈 Scalable foundation — link-building processes designed to grow with your SaaS.</span>
-            </li>
-          </ul>
+          <ul className="mt-6 space-y-3 hidden md:block">
+  <li className="flex items-start gap-3">
+    <span className="inline-block mt-1 text-blue-600">•</span>
+    <span className="text-gray-700">
+      🚀 Performance-focused — strategies aligned with SaaS growth KPIs.
+    </span>
+  </li>
+  <li className="flex items-start gap-3">
+    <span className="inline-block mt-1 text-blue-600">•</span>
+    <span className="text-gray-700">
+      🔗 SEO-first approach — high-quality, niche-relevant backlinks from trusted sources.
+    </span>
+  </li>
+  <li className="flex items-start gap-3">
+    <span className="inline-block mt-1 text-blue-600">•</span>
+    <span className="text-gray-700">
+      📈 Scalable foundation — link-building processes designed to grow with your SaaS.
+    </span>
+  </li>
+</ul>
         </motion.div>
 
         <motion.div

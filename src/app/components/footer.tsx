@@ -19,16 +19,16 @@ export default function Footer() {
       <h4 className="text-white text-lg font-semibold mb-4">Services</h4>
       <ul className="space-y-2">
         <li><a href="#" className="hover:text-white transition">Link Building</a></li>
-        <li><a href="#" className="hover:text-white transition">On-Page SEO</a></li>
-        <li><a href="#" className="hover:text-white transition">Content Marketing</a></li>
+        <li><a href="#" className="hover:text-white transition">Guest Posting</a></li>
+        <li><a href="#" className="hover:text-white transition">Seo</a></li>
       </ul>
     </div>
 
     {/* Column 3 */}
     <div>
-      <h4 className="text-white text-lg font-semibold mb-4">Follow Us</h4>
+      <h4 className="text-white text-lg font-semibold mb-4">Contact</h4>
       <ul className="space-y-2">
-        <li><a href="#" className="hover:text-white transition">Twitter</a></li>
+        <li><a href="#" className="hover:text-white transition">Email us: orgshell@gmail.com</a></li>
         <li><a href="#" className="hover:text-white transition">LinkedIn</a></li>
         <li><a href="#" className="hover:text-white transition">Instagram</a></li>
       </ul>

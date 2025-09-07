@@ -8,31 +8,37 @@ import Image from "next/image";
 
 export default function ServicesPage() {
   return (
-    <div className="pt-24">
+    <div className="pt-20">
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-6 text-center md:text-left md:flex items-center justify-between gap-10 py-16">
-        <div className="md:w-1/2">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            Link Building Services That Drive Results 🚀
+      <section className="max-w-7xl mx-auto px-6 md:flex items-center justify-between py-8 md:py-10">
+        {/* Left Content */}
+        <div className="md:w-1/2 flex flex-col justify-center">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+            Link Building Services  
           </h1>
-          <p className="text-lg text-gray-600 mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            That Drive Results 🚀
+          </h1>
+          <p className="text-base md:text-lg text-gray-600 mb-6">
             Get high-quality backlinks from trusted industry websites to boost
             your SEO and grow your organic visibility.
           </p>
           <Link
             href="/contact"
-            className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
+            className="bg-blue-600 text-white px-5 py-2.5 rounded-xl shadow hover:bg-blue-700 transition w-fit"
           >
             Get Started
           </Link>
         </div>
-        <div className="md:w-1/2 mt-5 md:mt-0 flex justify-center">
+
+        {/* Right Image */}
+        <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
           <Image
             src="/seo001.png"
             alt="Link Building Illustration"
-            width={400}
-            height={400}
-            className="w-50 md:w-full"
+            width={450}
+            height={450}
+            className="max-w-xs md:max-w-sm lg:max-w-md"
           />
         </div>
       </section>
@@ -49,9 +55,9 @@ export default function ServicesPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Starter", price: "$199/mo", features: ["10 backlinks", "Basic outreach", "Monthly reporting"] },
-              { title: "Growth", price: "$499/mo", features: ["30 backlinks", "Advanced outreach", "Bi-weekly reporting"], highlighted: false },
-              { title: "Pro", price: "$999/mo", features: ["70 backlinks", "Premium outreach", "Weekly reporting"] },
+              { title: "Starter", price: "$1100/mo", features: ["10 backlinks", "Metrics: DR 50+, Traffic 1,000+", "SaaS Websites", "Backlink Analysis", "SERP Tracking"] },
+              { title: "Growth", price: "$2000/mo", features: ["20 backlinks", "Metrics: DR 50+, Traffic 1,000+", "SaaS Websites", "Backlink Analysis", "SERP Tracking"], highlighted: false },
+              { title: "Pro", price: "$2800/mo", features: ["30 backlinks", "Metrics: DR 50+, Traffic 1,000+", "SaaS Websites", "Backlink Analysis", "SERP Tracking"] },
             ].map((plan, i) => (
               <motion.div
                 whileHover={{ scale: 1.05 }}

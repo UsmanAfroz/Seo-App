@@ -26,8 +26,8 @@ export default function Features() {
   return (
     <section id="features" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <div className=" text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-g-900">
             Grow your SaaS <span className="text-blue-600"> with smarter SEO</span>
           </h2>
           <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
