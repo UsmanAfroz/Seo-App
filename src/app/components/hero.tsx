@@ -1,6 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+
+const MotionLink = motion(Link);
 
 export default function Hero() {
   return (
@@ -40,29 +43,33 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="mt-7 flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
           >
-            <motion.button
+            {/* Request a Call (links to Contact page) */}
+            <MotionLink
+              href="/contact"
               whileHover={{ scale: 1.07 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-medium 
-             bg-white text-indigo-700 shadow-md 
-             transition duration-300
-             hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 
-             hover:text-white"
+                        bg-white text-indigo-700 shadow-md 
+                        transition duration-300
+                        hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 
+                        hover:text-white"
             >
               Request a Call
-            </motion.button>
+            </MotionLink>
 
-            <motion.button
+            {/* Our Process (for now just a placeholder, can link to /process or another section) */}
+            <MotionLink
+              href="/process"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-medium 
-             bg-white text-indigo-700 shadow-md 
-             transition duration-300
-             hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 
-             hover:text-white"
+                        bg-white text-indigo-700 shadow-md 
+                        transition duration-300
+                        hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 
+                        hover:text-white"
             >
               Our Process
-            </motion.button>
+            </MotionLink>
           </motion.div>
         </div>
 
