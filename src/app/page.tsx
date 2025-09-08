@@ -10,7 +10,7 @@ import BrandMentions from "./components/brandMentions";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      
       <Hero />
       <Features />
       <AboutSection />

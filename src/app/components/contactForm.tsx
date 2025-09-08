@@ -25,6 +25,35 @@ export default function ContactForm() {
       </div>
 
       <div>
+        <label htmlFor="company" className="block font-medium">
+          Company Name
+        </label>
+        <input
+          id="company"
+          type="text"
+          name="company"
+          className="w-full border rounded p-2"
+        />
+        <ValidationError prefix="Company" field="company" errors={state.errors} />
+      </div>
+
+      <div>
+        <label htmlFor="company" className="block font-medium">
+          URL
+        </label>
+        <input
+          id="url"
+          type="url"
+          name="url"
+          placeholder="https://example.com"
+          className="w-full border rounded p-2"
+        />
+        <ValidationError prefix="Company" field="company" errors={state.errors} />
+      </div>
+
+      
+
+      <div>
         <label htmlFor="message" className="block font-medium">Message</label>
         <textarea
           id="message"
