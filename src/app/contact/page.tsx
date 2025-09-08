@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import ContactForm from "../components/contactForm"; // adjust path if needed
+import Image from "next/image";
 
 export default function ContactPage() {
   return (
@@ -41,9 +42,11 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             {/* Left Image Section */}
             <div className="flex justify-center">
-              <img
+              <Image
                 src="/seo001.png" // <-- replace with your image path
                 alt="Contact Illustration"
+                width={450}
+                            height={450}
                 className="rounded-2xl shadow-lg max-h-[400px] object-cover"
               />
             </div>
