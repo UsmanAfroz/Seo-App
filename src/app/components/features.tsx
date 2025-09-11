@@ -28,10 +28,12 @@ export default function Features() {
       <div className="max-w-6xl mx-auto px-6">
         <div className=" text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-g-900">
-            Grow your SaaS <span className="text-blue-600"> with smarter SEO</span>
+            Grow your SaaS{" "}
+            <span className="text-blue-600"> with smarter SEO</span>
           </h2>
           <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-           A tailored link-building foundation built for SaaS. Driving rankings, traffic, and conversions that matter.
+            A tailored link-building foundation built for SaaS. Driving
+            rankings, traffic, and conversions that matter.
           </p>
         </div>
 
@@ -43,13 +45,20 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="bg-gradient-to-b from-blue-50/40 to-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-lg transition"
+              className="group bg-gradient-to-b from-blue-50/40 to-white border border-gray-100 rounded-2xl p-6 shadow-sm 
+  transition cursor-pointer hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500"
             >
               <div className="inline-flex items-center justify-center rounded-lg bg-white p-3 ring-1 ring-gray-100">
-                <div className="text-blue-600">{it.icon}</div>
+                <div className="text-blue-600">
+                  {it.icon}
+                </div>
               </div>
-              <h3 className="mt-4 text-xl font-semibold text-gray-900">{it.title}</h3>
-              <p className="mt-2 text-gray-600">{it.desc}</p>
+              <h3 className="mt-4 text-xl font-semibold text-gray-900 group-hover:text-white">
+                {it.title}
+              </h3>
+              <p className="mt-2 text-gray-600 group-hover:text-white">
+                {it.desc}
+              </p>
             </motion.div>
           ))}
         </div>

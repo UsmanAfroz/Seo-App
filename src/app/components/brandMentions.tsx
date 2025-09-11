@@ -13,8 +13,7 @@ const logos = [
 
 export default function BrandMentions() {
   return (
-    // 👇 Hidden on mobile, shown only from md and up
-    <div className="hidden md:block w-full bg-white py-12 overflow-hidden">
+    <div className="w-full bg-white py-12 overflow-hidden">
       {/* Heading */}
       <div className="text-center mb-8 px-4">
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
@@ -22,8 +21,26 @@ export default function BrandMentions() {
         </h2>
       </div>
 
-      {/* Logos */}
-      <div className="relative flex overflow-x-hidden">
+      {/* 👇 Mobile View (static grid) */}
+      <div className="grid grid-cols-2 gap-6 px-6 md:hidden">
+        {logos.map((logo, index) => (
+          <div
+            key={`mobile-${index}`}
+            className="flex items-center justify-center"
+          >
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={120}
+              height={60}
+              className="object-contain"
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* 👇 Desktop View (scrolling slider) */}
+      <div className="hidden md:block relative flex overflow-x-hidden">
         {/* First loop */}
         <div className="flex animate-marquee space-x-12">
           {logos.map((logo, index) => (

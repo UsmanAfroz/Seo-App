@@ -22,7 +22,7 @@ export default function ServicesPage() {
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-white">
               Link Building Services
-               <span className="block text-yellow-300">That Drive Results.</span>
+               <span className="block text-yellow-200">That Drive Results.</span>
             </h1>
             
             {/* <h2 className="text-3xl sm:text-4xl md:text-4xl font-extrabold leading-tight tracking-tight text-white">
@@ -81,7 +81,7 @@ export default function ServicesPage() {
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 key={i}
-                className="p-8 rounded-2xl shadow-md transition cursor-pointer bg-white hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white"
+                className="p-8 rounded-2xl shadow-md transition cursor-pointer bg-white hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 hover:text-white"
               >
                 <h3 className="text-xl font-semibold mb-4">{plan.title}</h3>
                 <p className="text-3xl font-bold mb-6">{plan.price}</p>
@@ -92,7 +92,7 @@ export default function ServicesPage() {
                 </ul>
                 <Link
                   href="/contact"
-                  className="px-5 py-2 rounded-lg font-medium bg-blue-600 text-white hover:bg-white hover:text-blue-600 transition"
+                  className="px-5 py-2 rounded-lg font-medium bg-blue-500 text-white hover:bg-white hover:text-blue-500 transition"
                 >
                   Get Started
                 </Link>
@@ -107,7 +107,7 @@ export default function ServicesPage() {
         <h2 className="text-3xl font-bold text-center mb-12">
           How We Build Links
         </h2>
-        <div className="grid md:grid-cols-4 gap-8 text-center">
+        <div className="grid md:grid-cols-4 gap-8 text-center ">
           {[
             {
               title: "Strategy",
@@ -133,18 +133,19 @@ export default function ServicesPage() {
             <motion.div
               whileHover={{ y: -8 }}
               key={i}
-              className="p-6 bg-white rounded-2xl shadow-md"
+              className="p-6 bg-white rounded-2xl shadow-md transition cursor-pointer hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 hover:text-white"
             >
               <div className="text-4xl mb-4">{step.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-              <p className="text-gray-600">{step.desc}</p>
+              <p className="text-gray-600 hover:text-white">{step.desc}</p>
             </motion.div>
           ))}
         </div>
         <div className="text-center mt-12">
           <Link
             href="/contact"
-            className="bg-blue-600 text-white px-8 py-3 rounded-xl shadow hover:bg-blue-700 transition"
+            className="bg-blue-600 text-white px-8 py-3 rounded-xl shadow hover:bg-blue-700 transition 
+            hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 hover:text-white"
           >
             Let’s Talk
           </Link>

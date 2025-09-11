@@ -21,8 +21,8 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight"
           >
-            Link Building.{" "}
-            <span className="block text-yellow-300">Done Right.</span>
+            Supercharge Your SaaS with  {" "}
+            <span className="block text-yellow-300">Authority Links.</span>
           </motion.h1>
 
           {/* Subheading */}
@@ -45,7 +45,7 @@ export default function Hero() {
           >
             {/* Request a Call (links to Contact page) */}
             <MotionLink
-              href="/contact"
+              href="/services"
               whileHover={{ scale: 1.07 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-medium 
@@ -54,12 +54,12 @@ export default function Hero() {
                         hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 
                         hover:text-white"
             >
-              Request a Call
+              Get Your Plan
             </MotionLink>
 
             {/* Our Process (for now just a placeholder, can link to /process or another section) */}
             <MotionLink
-              href="/process"
+              href="/contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-medium 

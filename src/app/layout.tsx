@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "My Website",
+  title: "Build Linkly",
   description: "SEO backlinks & services website",
 };
 
