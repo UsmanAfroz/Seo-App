@@ -26,7 +26,7 @@ export default function Navbar() {
           <Link href="/" className="hover:text-blue-600 transition">Home</Link>
           <Link href="/#about" className="hover:text-blue-600 transition">About</Link>
           <Link href="/blog" className="hover:text-blue-600 transition">Blog</Link>
-          <Link href="/services" className="hover:text-blue-600 transition">Pricing</Link>
+          <Link href="/pricing" className="hover:text-blue-600 transition">Pricing</Link>
           <Link href="/contact" className="hover:text-blue-600 transition">Contact</Link>
         </div>
 
@@ -56,7 +56,7 @@ export default function Navbar() {
           <Link href="/" className="block hover:text-blue-600 transition">Home</Link>
           <Link href="/#about" className="block hover:text-blue-600 transition">About</Link>
           <Link href="/blog" className="block hover:text-blue-600 transition">Blog</Link>
-          <Link href="/services" className="block hover:text-blue-600 transition">Pricing</Link>
+          <Link href="/pricing" className="block hover:text-blue-600 transition">Pricing</Link>
           <Link href="/contact" className="block hover:text-blue-600 transition">Contact</Link>
 
           {/* Mobile Button */}

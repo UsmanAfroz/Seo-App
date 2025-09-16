@@ -45,7 +45,7 @@ export default function Hero() {
           >
             {/* Request a Call (links to Contact page) */}
             <MotionLink
-              href="/services"
+              href="/pricing"
               whileHover={{ scale: 1.07 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-medium 
@@ -81,7 +81,7 @@ export default function Hero() {
           className="hidden md:flex justify-center md:justify-end"
         >
           <Image
-            src="/seo001.png"
+            src="/build002.png"
             alt="Hero Illustration"
             width={450}
             height={450}

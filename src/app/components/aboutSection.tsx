@@ -59,10 +59,10 @@ export default function AboutSection() {
             <div className="text-center px-6">
             
               <Image
-                          src="/logo01.png"
+                          src="/seo001.png"
                           alt="Link Building Illustration"
-                          width={150}
-                          height={100}
+                          width={470}
+                          height={470}
                           className="w-50 md:w-full"
                         />
             </div>

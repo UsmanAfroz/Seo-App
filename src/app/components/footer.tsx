@@ -18,9 +18,9 @@ export default function Footer() {
     <div>
       <h4 className="text-white text-lg font-semibold mb-4">Services</h4>
       <ul className="space-y-2">
-        <li><a href="#" className="hover:text-white transition">Link Building</a></li>
-        <li><a href="#" className="hover:text-white transition">Guest Posting</a></li>
-        <li><a href="#" className="hover:text-white transition">Seo</a></li>
+        <li><a href="/pricing" className="hover:text-white transition">Link Insertion</a></li>
+        <li><a href="/pricing" className="hover:text-white transition">SaaS Link building</a></li>
+        {/* <li><a href="#" className="hover:text-white transition">Seo</a></li> */}
       </ul>
     </div>
 
@@ -28,9 +28,9 @@ export default function Footer() {
     <div>
       <h4 className="text-white text-lg font-semibold mb-4">Contact</h4>
       <ul className="space-y-2">
-        <li><a href="#" className="hover:text-white transition">Email us: orgshell@gmail.com</a></li>
-        <li><a href="#" className="hover:text-white transition">LinkedIn</a></li>
-        <li><a href="#" className="hover:text-white transition">Instagram</a></li>
+        <li><a href="#" className="hover:text-white transition">Email us:info.buildlinklypro@gmail.com</a></li>
+        {/* <li><a href="#" className="hover:text-white transition">LinkedIn</a></li>
+        <li><a href="#" className="hover:text-white transition">Instagram</a></li> */}
       </ul>
     </div>
   </div>
