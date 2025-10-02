@@ -7,59 +7,94 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function ServicesPage() {
+  const MotionLink = motion(Link);
   return (
     <div>
       {/* Hero Section */}
-            <section className="bg-gradient-to-r from-indigo-600 to-purple-600">
-        <div className="max-w-7xl mx-auto px-6 md:flex items-center justify-between py-16 md:py-20">
-          {/* Left Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="md:w-1/2 flex flex-col justify-center"
-          >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-white">
-              Link Building Services
-               <span className="block text-yellow-200">That Drive Results.</span>
-            </h1>
+             <section
+                  id="hero"
+                  className="relative min-h-[80vh] flex items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white"
+                >
+                  <div className="w-full max-w-7xl mx-auto px-6 sm:px-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    {/* Left Content */}
+                    <div className="text-center md:text-left">
+                      {/* Heading */}
+                      <motion.h1
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight"
+                      >
+                          Link Building Services  {" "}
+                        <span className="block text-yellow-300">That Drive Results</span>
+                      </motion.h1>
             
-            {/* <h2 className="text-3xl sm:text-4xl md:text-4xl font-extrabold leading-tight tracking-tight text-white">
-              That Drive Results 🚀
-            </h2> */}
-            <p className="text-base md:text-lg text-white mb-6">
-              Get high-quality backlinks from trusted industry websites to boost
+                      {/* Subheading */}
+                      <motion.p
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2, duration: 0.8 }}
+                        className="mt-5 text-base sm:text-lg md:text-xl text-white/90 max-w-xl"
+                      >
+                         Get high-quality backlinks from trusted industry websites to boost
               your SEO and grow your organic visibility.
-            </p>
-            <Link
-              href="/contact"
-              className="bg-blue-600 text-white px-5 py-2.5 rounded-xl shadow hover:bg-blue-700 transition w-fit
-               hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 
-                           hover:text-white"
-            >
-              Get Started
-            </Link>
-          </motion.div>
 
-          {/* Right Image */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="md:w-1/2 mt-8 md:mt-0 flex justify-center"
-          >
-            <Image
-              src="/seo001.png"
-              alt="Link Building Illustration"
-              width={450}
-              height={450}
-              className="max-w-xs md:max-w-sm lg:max-w-md"
-            />
-          </motion.div>
-        </div>
-      </section>
+                      </motion.p>
+            
+                      {/* CTA Buttons */}
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4, duration: 0.8 }}
+                        className="mt-7 flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+                      >
+                        {/* Request a Call (links to Contact page) */}
+                        <MotionLink
+                          href="/pricing"
+                          whileHover={{ scale: 1.07 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-medium 
+                                    bg-white text-indigo-700 shadow-md 
+                                    transition duration-300
+                                    hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 
+                                    hover:text-white"
+                        >
+                          Get Started
+                        </MotionLink>
+            
+                        {/* Our Process (for now just a placeholder, can link to /process or another section) */}
+                        {/* <MotionLink
+                          href="/contact"
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-medium 
+                                    bg-white text-indigo-700 shadow-md 
+                                    transition duration-300
+                                    hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 
+                                    hover:text-white"
+                        >
+                          Our Process
+                        </MotionLink> */}
+                      </motion.div>
+                    </div>
+            
+                    {/* Right Illustration */}
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.3, duration: 1 }}
+                      className="hidden md:flex justify-center md:justify-end"
+                    >
+                      <Image
+                        src="/build004.png"
+                        alt="Hero Illustration"
+                        width={450}
+                        height={450}
+                        className="object-contain drop-shadow-xl"
+                      />
+                    </motion.div>
+                  </div>
+                </section>
 
 
       {/* Pricing Section */}
@@ -87,7 +122,7 @@ export default function ServicesPage() {
                 <p className="text-3xl font-bold mb-6">{plan.price}</p>
                 <ul className="space-y-3 mb-6">
                   {plan.features.map((feature, idx) => (
-                    <li key={idx}>✅ {feature}</li>
+                    <li key={idx}>{feature}</li>
                   ))}
                 </ul>
                 <Link

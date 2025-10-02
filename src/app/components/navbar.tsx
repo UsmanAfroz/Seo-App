@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* Desktop Nav Links */}
         <div className="hidden md:flex space-x-8 font-[Poppins] text-gray-700 font-normal">
           <Link href="/" className="hover:text-blue-600 transition">Home</Link>
-          <Link href="/#about" className="hover:text-blue-600 transition">About</Link>
+          <Link href="/about" className="hover:text-blue-600 transition">About</Link>
           <Link href="/blog" className="hover:text-blue-600 transition">Blog</Link>
           <Link href="/pricing" className="hover:text-blue-600 transition">Pricing</Link>
           <Link href="/contact" className="hover:text-blue-600 transition">Contact</Link>

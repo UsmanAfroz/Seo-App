@@ -28,7 +28,7 @@ export default function Footer() {
     <div>
       <h4 className="text-white text-lg font-semibold mb-4">Contact</h4>
       <ul className="space-y-2">
-        <li><a href="#" className="hover:text-white transition">Email us:info.buildlinklypro@gmail.com</a></li>
+        <li><a href="#" className="hover:text-white transition">Email us: info.buildlinklypro@gmail.com</a></li>
         {/* <li><a href="#" className="hover:text-white transition">LinkedIn</a></li>
         <li><a href="#" className="hover:text-white transition">Instagram</a></li> */}
       </ul>
