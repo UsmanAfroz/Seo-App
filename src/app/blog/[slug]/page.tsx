@@ -38,7 +38,7 @@ export async function generateMetadata({
     title: `${data.title} | Buildlinkly`,
     description: data.description,
     openGraph: {
-      title: data.title,
+    //   title: data.title,
       description: data.description,
       images: [data.ogImage || data.coverImage].filter(Boolean) as string[],
     },
@@ -99,7 +99,7 @@ export default async function PostPage({
     <main className="max-w-4xl mx-auto py-16 px-6">
       <article className="prose prose-lg md:prose-xl prose-indigo dark:prose-invert max-w-none">
         {/* Title */}
-        <h1 className="!mb-4">{frontmatter.title}</h1>
+        {/* <h1 className="!mb-4">{frontmatter.title}</h1> */}
 
         {/* Meta Info */}
         <div className="text-sm text-gray-500 mb-6">

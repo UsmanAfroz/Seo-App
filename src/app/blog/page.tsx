@@ -1,6 +1,6 @@
 import { getAllPosts } from "@/lib/post"; 
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default async function BlogPage() {
   const posts = getAllPosts();
@@ -9,7 +9,7 @@ export default async function BlogPage() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Hero Section */}
       <section className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-[10rem] px-6 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold">Blog</h1>
+        <h1 className="text-4xl md:text-6xl font-bold">Blogs</h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl">
           Insights, stories, and updates from our team.
         </p>
@@ -27,13 +27,13 @@ export default async function BlogPage() {
               >
                 {post.coverImage && (
                   <div className="mb-4">
-                    <Image
+                    {/* <Image
                       src={post.coverImage}
                       alt={post.title}
                       width={600}
                       height={400}
                       className="rounded-lg object-cover"
-                    />
+                    /> */}
                   </div>
                 )}
 
